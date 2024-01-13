@@ -1,4 +1,8 @@
-<h1 [hidden]="showheader">hi kayal</h1>
-<h2>welcome</h2>
+<!-- <h1 [hidden]="showheader">hi kayal</h1>
+<h2>welcome</h2> -->
 
+
+
+<input type="text" [(ngModel)]="value" >
 <button (click)="buttonToggle()">toggle</button>
+<app-parent-life-cycle-hooks [value]="value" *ngIf="showtag"></app-parent-life-cycle-hooks>

@@ -8,13 +8,15 @@ import { Component,OnInit,OnDestroy} from '@angular/core';
 })
 export class AppComponent implements OnInit,OnDestroy  {
   showheader: boolean = false;
+  showtag:boolean=false;
   
   
   title = 'checktest';
+value: String|undefined;
   
 
   buttonToggle(){
-    this.showheader=!this.showheader;
+    this.showtag=!this.showtag;
   }
 
 
